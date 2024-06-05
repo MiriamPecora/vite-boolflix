@@ -12,7 +12,7 @@ import axios from 'axios';
         },
         methods: {
             getSearchedMedia() {
-                const url = `${this.store.infoAPI_movie.url}api_key=${this.store.api_key}&query=${this.searched_media}`;
+                const url = `${this.store.infoAPI_movie.url}api_key=${this.store.api_key}&query=${this.searched_media}&language=${this.store.language}`;
                 axios
                 .get(url)
                 .then((response) => { 

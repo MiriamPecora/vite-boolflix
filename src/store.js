@@ -9,7 +9,7 @@ export const store = reactive({
     results: [],
 
     api_key: '23f1adce0be4ca3441ad85c7495255d4',
-    language: '&language=it-IT',
+    language: 'it-IT',
 
     infoAPI_movie: {
         url: 'https://api.themoviedb.org/3/search/movie?',
