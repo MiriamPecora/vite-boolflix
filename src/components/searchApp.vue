@@ -32,7 +32,6 @@ import axios from 'axios';
             },
         },
         created() {
-            this.store.results = [];
         },
     };
 </script>
@@ -41,5 +40,16 @@ import axios from 'axios';
     <div>
         <input v-model="searched_media" type="text" placeholder="American Psycho">
         <button @click="getSearchedMedia">Cerca</button>
+    </div>
+
+    <div class="mediaCard">
+        <ul v-for="movie in store.results">
+            <li> {{ movie.title }}</li>
+            <ul>
+                <li> {{ movie.original_title }}</li>      
+                <li> {{ movie.original_language }}</li>      
+                <li> {{ movie.vote_average }}</li>      
+            </ul>
+        </ul>
     </div>
 </template>
