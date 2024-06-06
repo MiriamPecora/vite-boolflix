@@ -6,7 +6,8 @@ export const store = reactive({
     original_language: [],
     vote_average: [],
 
-    results: [],
+    movieResults: [],
+    tvShowResults: [],
 
     api_key: '23f1adce0be4ca3441ad85c7495255d4',
     language: 'it-IT',
@@ -15,6 +16,8 @@ export const store = reactive({
         url: 'https://api.themoviedb.org/3/search/movie?',
     },
 
-    infoAPI_tvseries: {},
+    infoAPI_tvseries: {
+        url: 'https://api.themoviedb.org/3/search/tv?',
+    },
 
 });
